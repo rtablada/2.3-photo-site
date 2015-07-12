@@ -11,4 +11,4 @@ var includePaths = [
 
 var compiledCSS = sassCompile(includePaths, 'app.scss', 'app.css');
 
-module.exports = merge('public', compiledCSS);
+module.exports = merge(['public', compiledCSS]);
